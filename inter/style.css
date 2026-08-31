@@ -22,35 +22,19 @@ body {
 }
 
 .drop-down-row details {
-     display: grid;
      background-color: rgb(50, 46, 55);
      padding: 15px;
      border-radius: 8px;
 }
 
-details > p {
-     display: grid;
-     grid-template-rows: 0fr;
-     transition: grid-template-rows 0.3s ease;
-     overflow: hidden;
-}
-
-details[open] > p {
-     grid-template-rows: 1fr;
-}
-
 .details-content {
-     display: grid;
-     grid-template-rows: 0fr;
-     transition: grid-template-rows 0.3s ease;
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.3s ease;
 }
 
 details[open] .details-content {
-     grid-template-rows: 1fr;
-}
-
-.details-content p {
-     overflow: hidden;
+     max-height: 200px;
 }
 
 .drop-down-row summary {
