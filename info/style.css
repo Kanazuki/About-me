@@ -86,7 +86,12 @@ body {
 .interests-link a {
     color: aqua;
     text-decoration: none;
-    font-size: smaller;
+    font-size: clamp(12px, 2.7vw, 20px);
+}
+
+.interests-link a:hover{
+    color: rgb(153, 255, 255);
+    font-size: clamp(12px, 3vw, 23px);
 }
 
 @media (max-width: 600px) {
