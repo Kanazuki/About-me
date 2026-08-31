@@ -37,6 +37,14 @@ body{
      font-size: clamp(12px, 2.5vw, 23px);
 }
 
+.note{
+     margin-top: 500px;
+     display: flex;
+     flex-direction: row-reverse;
+     text-align: right;
+     font-size: clamp(12px, 2vw, 23px);
+}
+
 @media (max-width: 600px) {
      body {
           padding: 14px;

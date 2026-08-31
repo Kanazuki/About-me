@@ -58,7 +58,7 @@ body {
 }
 .link:hover{
     color: rgb(153, 255, 255);
-    font-size: clamp(12px, 2.6vw, 23px);
+    /*font-size: clamp(12px, 2.6vw, 23px);*/
 }
 
 .info-list {
