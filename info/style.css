@@ -25,7 +25,7 @@ body {
 }
 
 .profile-photo {
-    border-radius: 80px;
+    border-radius: 75px;
     width: 150px;
     height: 150px;
 }
@@ -69,11 +69,17 @@ body {
     margin: 0 0 1em;
 }
 
+.cndv{
+    text-decoration: none;
+    color:rgb(29, 26, 31)
+}
+
 .interests-link {
     margin-left: 20px;
     margin-top: 12px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: clamp(8px, 2vw, 18px);
     font-family: cursive;
 }
