@@ -27,24 +27,10 @@ body {
      border-radius: 8px;
 }
 
-.details-content {
-     max-height: 0;
-     overflow: hidden;
-     transition: max-height 0.3s ease;
-}
-
-details[open] .details-content {
-     max-height: 200px;
-}
-
 .drop-down-row summary {
      color: aqua;
-     font-size: 20px;
+     font-size: clamp(1.8rem, 1.5s, 2rem);
      cursor: pointer;
-}
-
-.drop-down-row p {
-     color: white;
 }
 
 .navigation-bar {
