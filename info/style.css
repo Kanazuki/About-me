@@ -12,11 +12,6 @@ body {
     font-size: clamp(1.8rem, 3vw, 2.8rem);
 }
 
-.page-title a {
-    text-decoration: none;
-    color: rgb(49, 82, 87);
-}
-
 .info-header {
     display: flex;
     align-items: flex-start;
@@ -28,6 +23,18 @@ body {
     border-radius: 75px;
     width: 150px;
     height: 150px;
+}
+.profile-photo:hover{
+    animation: spin 1.5s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .profile-details {
@@ -47,6 +54,11 @@ body {
 .link {
     color: aqua;
     text-decoration: none;
+    transition: 0.2s;
+}
+.link:hover{
+    color: rgb(153, 255, 255);
+    font-size: clamp(12px, 2.6vw, 23px);
 }
 
 .info-list {
@@ -87,8 +99,8 @@ body {
     color: aqua;
     text-decoration: none;
     font-size: clamp(12px, 2.7vw, 20px);
+    transition: 0.2s;
 }
-
 .interests-link a:hover{
     color: rgb(153, 255, 255);
     font-size: clamp(12px, 3vw, 23px);
