@@ -12,10 +12,55 @@ body {
      font-size: clamp(1.8rem, 3vw, 2.8rem);
 }
 
-.drop-down-row{
-     display: flex;
-     flex-wrap: wrap;
-     gap: clamp(12px, 3vw, 23px);
+.drop-down-row {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 15px;
+     max-width: 900px;
+     margin: 30px auto;
+     
+}
+
+.drop-down-row details {
+     display: grid;
+     background-color: rgb(50, 46, 55);
+     padding: 15px;
+     border-radius: 8px;
+}
+
+details > p {
+     display: grid;
+     grid-template-rows: 0fr;
+     transition: grid-template-rows 0.3s ease;
+     overflow: hidden;
+}
+
+details[open] > p {
+     grid-template-rows: 1fr;
+}
+
+.details-content {
+     display: grid;
+     grid-template-rows: 0fr;
+     transition: grid-template-rows 0.3s ease;
+}
+
+details[open] .details-content {
+     grid-template-rows: 1fr;
+}
+
+.details-content p {
+     overflow: hidden;
+}
+
+.drop-down-row summary {
+     color: aqua;
+     font-size: 20px;
+     cursor: pointer;
+}
+
+.drop-down-row p {
+     color: white;
 }
 
 .navigation-bar {
@@ -37,4 +82,10 @@ body {
 .navigation-bar a:hover{
      color: rgb(153, 255, 255);
      font-size: clamp(12px, 3vw, 23px);
+}
+
+@media (max-width: 600px) {
+     .drop-down-row {
+     grid-template-columns: 1fr;
+     }
 }
